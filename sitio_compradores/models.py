@@ -6,3 +6,4 @@ class Compradores(models.Model):
     endereço = models.CharField(max_length=50)
     telefone = models.IntegerField()
     ativo = models.BooleanField
+    inadimplente = models.CharField(max_length=50)
