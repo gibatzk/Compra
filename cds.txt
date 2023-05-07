@@ -1,0 +1,35 @@
+class Compradores(models.Model):
+    nome = models.CharField(max_length=50)
+    cnpj = models.CharField(max_length=50)
+    endereço = models.CharField(max_length=50)
+    telefone = models.IntegerField()
+    cultivar = models.CharField(max_length=50)
+    hectare = models.CharField(max_length=50)
+
+
+class Propriedade(models.Model):
+    nome = models.CharField(max_length=50)
+    cnpj = models.CharField(max_length=50)
+    endereço = models.CharField(max_length=50)
+    telefone = models.IntegerField()
+    cultivar = models.CharField(max_length=50)  #alface
+    hectare = models.CharField(max_length=50)
+    produção_mês_quantidade = models.IntegerField()
+
+
+
+class Propriedade:
+
+    def __init__(self, nome, cnpj, endereço, telefone, cultivar, hectare, produção_mês_quantidade):
+        self.nome = nome
+        self.cnpj = cnpj
+        self.endereço = endereço
+        self.telefone = telefone
+        self.cultivar  = cultivar
+        self.hectare = hectare
+        self.produção_mês_quantidadeprodução_mês_quantidade = produção_mês_quantidade
+
+
+
+
+
