@@ -5,5 +5,5 @@ class Compradores(models.Model):
     cnpj = models.CharField(max_length=50)
     endereço = models.CharField(max_length=50)
     telefone = models.IntegerField()
-    ativo = models.BooleanField
-    inadimplente = models.CharField(max_length=50)
+    ativo = models.BooleanField()
+    inadimplente = models.BooleanField()
